@@ -12,8 +12,8 @@ namespace Hnizda
         {
             foreach (var h in hnizda)
             {
-                g.DrawEllipse(Pens.Black, h.x - h.width / 2, h.y - h.height / 2, h.width, h.height);
-                g.DrawString(h.name, new Font("Arial", 10f), Brushes.Black, h.x - h.width / 4, h.y - h.height / 4);
+                g.DrawEllipse(new Pen(Brushes.White, 10f), h.x - h.width / 2, h.y - h.height / 2, h.width, h.height);
+                g.DrawString(h.name, new Font("Arial", 12f), Brushes.White, h.x - h.width / 4, h.y - h.height / 4);
             }
         }
 
